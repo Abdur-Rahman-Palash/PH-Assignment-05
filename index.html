@@ -17,11 +17,11 @@
 </style>
 </head>
 <body class="lex-font">
-<header>
+<header class="sticky top-0 bg-white backdrop-blur-lg border border-white  shadow-lg rounded-lg p-2 md:py-4 lg:py-2 ">
     <nav>
-        <div class="navbar bg-[#F9F7F3] px-10 py-4">
+        <div class="navbar bg-[#F9F7F3] px-10 py-4 ">
             <div class="navbar-start">
-            <a class="btn bg-[#B4F461] text-xl">Blog</a>
+            <a href="./blog.html" class="btn bg-[#B4F461] text-xl">Blog</a>
             </div>
             <div class="navbar-center hidden lg:flex gap-4">
             <div>
@@ -36,19 +36,19 @@
                 <img src="./assets/coin.png" alt="">
             </div>
             <div class="font-extabold text-xl">
-                <p>5500 BDT</p>
+                <p id="total-amount">5500</p>
             </div>
             </div>
         </div>
     </nav>
     <section class="mt-16">
         <div class="text-center">
-            <button class="btn hover:bg-[#B4F461] bg-[#B4F461] text-2xl">Donation</button>
-            <button class="btn text-2xl">History</button>
+            <button id="donation" class="btn hover:bg-black hover:text-white bg-[#B4F461] text-2xl">Donation</button>
+            <button id="history" class="btn text-2xl">History</button>
         </div>
     </section>
 </header>
-<main>
+<main id="donation1-form" class="w-11/12 mx-auto">
     <section class="flex flex-col lg:flex-row w-11/12 mx-auto mt-16 gap-16 bg-white border-2 px-6 py-4 rounded-lg">
 <div class=" w-4/5">
     <img class="w-[1500px] h-full" src="./assets/noakhali.png" alt="">
@@ -62,21 +62,21 @@
     </button>
     <h1 class="text-3xl">Donate for Flood at Noakhali, Bangladesh</h1>
     <p class="text-2xl"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-    <input class="bg-gray-100 px-4 py-2 rounded-lg text-white w-full" type="text" placeholder="Write Donation Amount">
+    <input id="donation-amount1" class="text-black px-4 py-2 rounded-lg  w-full" type="text" placeholder="Write Donation Amount">
     <div>
         <button class="btn hover:bg-[#B4F461] bg-[#B4F461] w-full" onclick="my_modal_5.showModal()">Donate Now</button>
         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-          <div class="modal-box">
+        <div class="modal-box">
             <h3 class="text-5xl text-center font-bold">Congrates!</h3>
             <img class="mx-auto mt-6 w-16 h-12" src="./assets/coin.png" alt="">
             <p class="py-4 text-center">You have donate for humankind <br> <span class="font-bold text-gray-500 text-center">   successfully</span>
             </p>
             <div class="modal-action">
-              <form method="dialog" class="">
+            <form method="dialog" class="">
                 <button class="btn mr-36">Close confirmation</button>
-              </form>
+            </form>
             </div>
-          </div>
+        </div>
         </dialog>
     </div>
 </div>
@@ -98,17 +98,17 @@
             <div>
         <button class="btn hover:bg-[#B4F461] bg-[#B4F461] w-full" onclick="my_modal_4.showModal()">Donate Now</button>
         <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
-          <div class="modal-box">
+        <div class="modal-box">
             <h3 class="text-5xl text-center font-bold">Congrates!</h3>
             <img class="mx-auto mt-6 w-16 h-12" src="./assets/coin.png" alt="">
             <p class="py-4 text-center">You have donate for humankind <br> <span class="font-bold text-gray-500 text-center">   successfully</span>
             </p>
             <div class="modal-action">
-              <form method="dialog" class="">
+            <form method="dialog" class="">
                 <button class="btn mr-36">Close confirmation</button>
-              </form>
+            </form>
             </div>
-          </div>
+        </div>
         </dialog>
     </div>
         </div>
@@ -130,21 +130,27 @@
                     <div>
                         <button class="btn hover:bg-[#B4F461] bg-[#B4F461] w-full" onclick="my_modal_7.showModal()">Donate Now</button>
                         <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
-                          <div class="modal-box">
+                        <div class="modal-box">
                             <h3 class="text-5xl text-center font-bold">Congrates!</h3>
                             <img class="mx-auto mt-6 w-16 h-12" src="./assets/coin.png" alt="">
                             <p class="py-4 text-center">You have donate for humankind <br> <span class="font-bold text-gray-500 text-center">   successfully</span>
                             </p>
                             <div class="modal-action">
-                              <form method="dialog" class="">
+                            <form method="dialog" class="">
                                 <button class="btn mr-36">Close confirmation</button>
-                              </form>
+                            </form>
                             </div>
-                          </div>
+                        </div>
                         </dialog>
                     </div>
                 </div>
-                    </section>
-</main> 
+                </section>
+</main>
+<section id="history-form">
+                    
+</section> 
+<script src="./utlities.js"></script>
+<script src="./toggle.js"></script>
+<script src="./donatee.js"></script>
 </body>
 </html>
