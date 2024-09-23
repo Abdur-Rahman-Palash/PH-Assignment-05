@@ -13,3 +13,7 @@ function getTextValueById(id){
     const textValueNumber = parseFloat(textValue);
     return textValueNumber;
 }
+function getButtonById(id){
+    const button = document.getElementById(id)
+    return button;
+}
